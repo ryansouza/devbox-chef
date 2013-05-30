@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+
+if [[ "$USER" == "root" ]]; then
+  echo "You shouldn't converge a dev box as root, ya goofus" >&2
+  exit 1
+fi
+
+berks install --path vendor/cookbooks
+
+chef-solo --config ./solo.rb --json-attributes ./node.json

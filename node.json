@@ -1,0 +1,9 @@
+{
+  "run_list": [
+    "recipe[homebrew]",
+    "recipe[macvim]",
+    "recipe[jgr-dotfiles]",
+    "recipe[musicality]",
+    "recipe[airfoil]"
+  ]
+}
