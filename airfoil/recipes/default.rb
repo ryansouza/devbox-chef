@@ -12,4 +12,5 @@ include_recipe "zip_app"
 zip_app_package "Airfoil" do
   source "http://neutral.rogueamoeba.com/mirror/files/Airfoil.zip"
   action :install
+  extracted "Airfoil"
 end
