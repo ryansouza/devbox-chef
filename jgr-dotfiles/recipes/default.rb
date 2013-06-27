@@ -16,8 +16,15 @@ git "#{home}/dotfiles" do
   action :sync
 end
 
-link "#{home}/.vimrc" do
-  to "#{home}/dotfiles/vimrc"
+# Dotfiles
+%w[
+  vimrc
+  zshenv
+  zshrc
+].each do |dotfile|
+  link "#{home}/.#{dotfile}" do
+    to "#{home}/dotfiles/#{dotfile}"
+  end
 end
 
 %w[

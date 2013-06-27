@@ -3,8 +3,6 @@
     "recipe[homebrew]",
     "recipe[macvim]",
     "recipe[jgr-dotfiles]",
-    "recipe[musicality]",
-    "recipe[airfoil]",
     "recipe[virtualbox]",
     "recipe[vagrant]"
   ]
